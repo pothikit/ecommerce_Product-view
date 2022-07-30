@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-review span {
+    font-size: 20px;
+}
+
+.product-review mark {
+    background-color: rgb(5, 156, 10);
+    margin: 0 5px;
+}
+
+.current-price {
+    color: #fcd700;
+}
+
+.magnifier-lens {
+    height: 130px;
+    width: 200px;
+    background-color: #ffa50030;
+    border: .1px solid orange;
+    opacity: 0;
+}
+
+.active .magnifier-lens {
+    opacity: 1;
+}
+
+.image-magnifier {
+    background: #ffa50010;
+    opacity: 0;
+	transform: scale(0);
+	transition: all .5s;
+}
+
+.active .image-magnifier {
+	transform: scale(1);
+    opacity: 1;
+}
